@@ -1,0 +1,48 @@
+b *check_authorization+79
+
+b *0x7fffffffdda0
+
+sudo mount -t vboxsf -o uid=1000,gid=1000 src ./src
+
+
+
+3a
+b *check_authorization+65
+
+
+
+
+3b
+'stdout': 4210816, 'stdin': 4210832, '': 4210816, 'deregister_tm_clones': 4198832, 'register_tm_clones': 4198880, '__do_global_dtors_aux': 4198944, 'completed.8060': 4210840, '__do_global_dtors_aux_fini_array_entry': 4210200, 'frame_dummy': 4198992, '__frame_dummy_init_array_entry': 4210192, '__FRAME_END__': 4203052, '__init_array_end': 4210200, '_DYNAMIC': 4210208, '__init_array_start': 4210192, '__GNU_EH_FRAME_HDR': 4202608, '_GLOBAL_OFFSET_TABLE_': 4210688, '__libc_csu_fini': 4199648, 'stdout@@GLIBC_2.2.5': 4210816, 'data_start': 4210792, 'stdin@@GLIBC_2.2.5': 4210832, '_edata': 4210808, 'check_authorization': 4199081, '_fini': 4199656, '__data_start': 4210792, '__dso_handle': 4210800, 'readLine': 4199021, '_IO_stdin_used': 4202496, 'uncallable': 4198998, '__libc_csu_init': 4199536, 'CANARY': 4210844, '_end': 4210848, '_dl_relocate_static_pie': 4198816, '_start': 4198768, '__bss_start': 4210808, 'main': 4199201, '__TMC_END__': 4210808, '_init': 4198400, 'puts': 4198612, 'plt.puts': 4198612, 'system': 4198628, 'plt.system': 4198628, 'printf': 4198644, 'plt.printf': 4198644, 'read': 4198660, 'plt.read': 4198660, 'srand': 4198676, 'plt.srand': 4198676, 'time': 4198692, 'plt.time': 4198692, 'setvbuf': 4198708, 'plt.setvbuf': 4198708, 'exit': 4198724, 'plt.exit': 4198724, 'setuid': 4198740, 'plt.setuid': 4198740, 'rand': 4198756, 'plt.rand': 4198756, '__libc_start_main': 4210672, 'got.__libc_start_main': 4210672, '__gmon_start__': 4210680, 'got.__gmon_start__': 4210680, 'got.stdout': 4210816, 'got.stdin': 4210832, 'got.puts': 4210712, 'got.system': 4210720, 'got.printf': 4210728, 'got.read': 4210736, 'got.srand': 4210744, 'got.time': 4210752, 'got.setvbuf': 4210760, 'got.exit': 4210768, 'got.setuid': 4210776, 'got.rand': 4210784
+
+
+
+
+
+b *fgets+145
+
+b *welcome+66
+b *main+308
+b *check_authorization+51
+b *check_authorization+73
+
+
+0xffffcf98
+
+
+4294954912 - 4294954904 = 8!
+
+
+
+3c
+b *check_authorization+91
+
+140729617431232 - 140729617431424
+
+buffer spans this 
+0x7fff1480fbf0			140733537385456
+0x7fff1480fc88
+
+
+ebp:
+0x7fff1480fcb0			140733537385648
